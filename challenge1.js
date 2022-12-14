@@ -1,11 +1,6 @@
-// Solve at least 3 of the challenges below. 
-// For each challenge you complete, include comments showing
-// the **overall goal** in your own words, your **pseudocode**, and your **final solution**. 
-
-
 // 1. Given an array of strings, return only the strings that have exactly 4 characters.
 
-// - set up an array with > 4 strings. Then using a for statement, print out only the strings
+// - set up an array with strings. Then using a for statement, print out only the strings
 //   that have exactly === 4 characters.
 
 
@@ -33,7 +28,7 @@ for (var i = 0; i < food.length; i++) {
 // First we start off by making an array of strings
 // We will set up our for statement for each element to go through our code.
 // Since we want all our elements to print, we need to make a code that changes each element to 
-// lowercase and prints it out till it reaches the end of the array.
+// lowercase and prints it out till it reaches the end of the array, which I googled how to.
 
 var hockeyTeams = ["Avalanche", "JETS", "KinGS", "SHArkS", "blUEs"];
 for(var i =0; i < hockeyTeams.length; i++) {
@@ -44,4 +39,15 @@ for(var i =0; i < hockeyTeams.length; i++) {
 // 1. Given an array of strings, return only the words that begin with the letter "t".
 
 // We will start with an array of string that has multiple elements and some beginning with the letter "t"
-// 
+// This will require a check to return elements *only* beginning with the letter "t" which requires an if statement
+
+
+var things = ["phone", "tent", "towel", "paper", "stamp", "house", "tank"];
+for (var i = 0; i < things.length; i++){
+  if(things[i].startsWith("t")) {
+    console.log(things[i])
+  }
+}
+// With 7 elements being checked, they are all being put through the code and only printing if the return true.
+// Meaning they do have start with a "t"
+// As I did not know what to code to find that, I googled "words that start with, javascript mdn"
